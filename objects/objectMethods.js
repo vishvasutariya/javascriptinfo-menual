@@ -66,3 +66,31 @@ let cakeShop ={
     }
 }
 cakeShop.sayhi();
+
+
+
+
+//object.assign 
+const obj = { a: 1 };
+const copy = Object.assign({}, obj);
+copy.a = 2;
+console.log(obj);
+console.log(copy);
+
+//object .freeze = make object immutable 
+let obj1 ={
+    new : 1,
+    new1 : 2,
+}
+let freezeobj = Object.freeze(obj1);
+obj1.new = 44;
+console.log(freezeobj);
+
+//groupby - not worked
+// let student = [
+//     {name :"xyz", class: 2},
+//     {name :"yyy", class: 4},
+//     {name :"lll", class: 8},
+// ];
+// let result = Object.groupBy(student, ({class})=>class);
+// console.log(result);
